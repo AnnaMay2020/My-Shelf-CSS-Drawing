@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+body {
+	background-color: #ecd590;
+	display: flex;
+	margin: 0;
+	padding:0;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.shelf {
+	position: relative;
+	width: 520px;
+	height: 20px;
+	background-color: #5a3f21;
+}
+
+/* clock */
+
+.clock {
+	width: 110px;
+	height: 110px;
+	background-color: #e9e6c9;
+	border: 10px solid #ff99cc;
+	border-radius: 50%;
+	position: absolute;
+	left: 30px;
+	top: -135px;
+}
+
+.knot {
+	width: 10px;
+	height: 10px;
+	background-color: #3399ff;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%, -50%);
+	z-index: 9;
+}
+
+.hand {
+	position: absolute;
+	width: 4px;
+	height: 50px;
+	background-color:#33ccff;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -100%);
+	transform-origin: bottom;
+}
+
+.hour-hand {
+	position: absolute;
+	height: 30px;
+	transform: translate(-50%, -100%) rotate(45deg);
+}
+
+.min-hand {
+	position: absolute;
+	height: 40px;
+	width: 3px;
+	transform: translate(-50%, -100%) rotate(160deg);
+}
+
+.second-hand {
+	height: 47px;
+	width: 2px;
+	transform: translate(-50%, -100%) rotate(-40deg);
+}
+
+.clock-ear-left {
+	width: 60px;
+	height: 30px;
+	background:linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+	position: absolute;
+	left: -38px;
+	top: -12px;
+	border-radius: 90px 90px 0 0;
+	transform: rotate(-50deg);
+}
+
+.clock-ear-left:after {
+	content: "";
+	width: 15px;
+	height: 8px;
+	background-color: #ff99cc;
+	position: absolute;
+	top: -9px;
+	left: 23px;
+	border-radius: 90px 90px 0 0;
+	
+}
+
+.clock-ear-right {
+	width: 60px;
+	height: 30px;
+	background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+	position: absolute;
+	right: -38px;
+	top: -12px;
+	border-radius: 90px 90px 0 0;
+	transform: rotate(50deg);
+}
+
+.clock-ear-right:after {
+	content: "";
+	width: 15px;
+	height: 8px;
+	background-color: #ff99cc;
+	position: absolute;
+	top: -9px;
+	right: 23px;
+	border-radius: 90px 90px 0 0;
+}
+
+.clock-foot-left {
+	height: 50px;
+	width: 12px;
+	background-color: #3399ff;
+	position: absolute;
+	left: 20px;
+	bottom: -25px;
+	transform: rotate( 30deg);
+	z-index: -1;
+}
+
+.clock-foot-right {
+	height: 50px;
+	width: 12px;
+	background-color: #3399ff;
+	position: absolute;
+	right: 20px;
+	bottom: -25px;
+	transform: rotate(-30deg);
+	z-index: -1;
+}
+
+/* books */
+
+.book-1 {
+	width: 40px;
+	height: 170px;
+	background-color: #3399ff;
+	position: absolute;
+	left: 210px;
+	top: -170px;
+}
+
+.book-1:before, .book-2:before, .book-3:before {
+	content: "";
+	width: 100%;
+	height: 20px;
+	background-color: white;
+	position: absolute;
+	top: 20px;
+	left: 0;
+}
+
+.book-1:after, .book-2:after, .book-3:after {
+	content: "";
+	width: 50%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.15;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.book-2 {
+	width: 40px;
+	height: 195px;
+	background-color: #ff99cc;
+	position: absolute;
+	left: 250px;
+	top: -195px;
+}
+
+
+.book-3 {
+	width: 40px;
+	height: 180px;
+	background-color: #ffcc66;
+	position: absolute;
+	left: 290px;
+	top: -180px;
+}
+
+/* Cactus- POT+PLANT */
+
+.cactus {
+	position: absolute;
+	width: 100px;
+	height: 180px;
+	top: -180px;
+	left: 380px;
+	
+}
+
+.pot {
+	width: 100%;
+	height: 50%;
+	background-color: brown;
+	position: absolute;
+	bottom: 0;
+	
+}
+
+.pot-bottom {
+	width: 100%;
+	height: 70%;
+	background: linear-gradient(to top, #ffffcc -9%, #663300 100%);
+	position: absolute;
+	bottom: 0;
+}
+
+.pot-top {
+	position: absolute;
+	top: 0;
+	left: -20%;
+	width: 140%;
+	height: 30%;
+	background: linear-gradient(to bottom, #ffffcc 0%, #663300 100%);
+}
+
+.plant-left {
+	position: absolute;
+	bottom: 50%;
+	left: 5%;
+	width: 45%;
+	height: 35%;
+	background: linear-gradient(to bottom, #00ffcc 0%, #336600 100%);
+	border-radius: 50px 50px 0 0;
+	
+}
+
+.plant-right {
+	position: absolute;
+	bottom: 50%;
+	right: 5%;
+	width: 45%;
+	height: 50%;
+	background: linear-gradient(to bottom, #00ffcc 0%, #336600 100%);
+	border-radius: 50px 50px 0 0;
+}
+
